@@ -3,50 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smart Coaching App</title>
+  <title>Smart Coaching</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- Banner Section -->
-  <header>
-    <img src="images/banner.jpg" alt="Smart Coaching Banner" class="banner" />
-    <h1>Welcome to Smart Coaching</h1>
-    <p>Your learning journey starts here!</p>
-    <button class="btn">Join Now</button>
-  </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Smart Coaching</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <img src="images/banner.png" alt="Banner" class="hero-img">
+    <div class="hero-text">
+      <h1>Learn. Grow. Succeed.</h1>
+      <p>Join the smartest coaching platform to shape your future</p>
+      <button onclick="joinNow()">Join Now</button>
+    </div>
+  </section>
 
   <!-- Courses Section -->
-  <section class="courses">
-    <h2>Popular Courses</h2>
-    <div class="course-list">
-      <div class="course">
-        <img src="images/course1.jpg" alt="Web Development Course" />
+  <section id="courses" class="section">
+    <h2>Our Popular Courses</h2>
+    <div class="courses">
+      <div class="course-card">
+        <img src="images/course1.jpg" alt="Web Dev" />
         <h3>Web Development</h3>
+        <p>Learn HTML, CSS, JavaScript and build real websites</p>
       </div>
-      <div class="course">
-        <img src="images/course2.jpg" alt="Python Course" />
+      <div class="course-card">
+        <img src="images/course2.jpg" alt="Python" />
         <h3>Python Programming</h3>
+        <p>Master Python from scratch with real-world examples</p>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>We provide expert coaching in coding, communication, and career skills with a student-first approach.</p>
+  <section id="about" class="section">
+    <h2>Why Choose Us?</h2>
+    <p>We are passionate about making students job-ready with practical skills, expert guidance, and personalized mentoring.</p>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: support@smartcoaching.com</p>
-    <p>Phone: +91 9876543210</p>
+  <section id="contact" class="section">
+    <h2>Get in Touch</h2>
+    <p>Email: hello@smartcoaching.com</p>
+    <p>Phone: +91 98765 43210</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Smart Coaching. All rights reserved.</p>
+    <p>&copy; 2025 Smart Coaching. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

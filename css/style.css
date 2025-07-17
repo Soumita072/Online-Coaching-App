@@ -5,74 +5,120 @@
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
-  background: #fff0f5; /* Baby pink background */
+  font-family: 'Segoe UI', sans-serif;
+  background: #694a5d;
   color: #333;
-  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-header {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff69b4;
+  padding: 1rem 2rem;
+  color: rgb(137, 204, 243);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: rgb(99, 122, 29);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
   text-align: center;
-  padding: 2rem;
-  background: #ffe6ea; /* Light pink banner area */
 }
 
-.banner {
+.hero-img {
   width: 100%;
-  max-height: 300px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  filter: brightness(70%);
+  border-bottom: 5px solid #ff69b4;
 }
 
-h1 {
-  margin-top: 1rem;
-  color: #d63384; /* Bright pink title */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(82, 49, 49);
 }
 
-.btn {
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text button {
   margin-top: 1rem;
   padding: 10px 20px;
-  background-color: #ff69b4; /* Pink button */
-  color: rgb(193, 111, 111);
+  background: #ff69b4;
+  color: rgb(231, 207, 207);
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 16px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.courses, .about, .contact {
-  padding: 2rem;
+.section {
+  padding: 3rem 2rem;
   text-align: center;
 }
 
-.course-list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 1rem;
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #d63384;
 }
 
-.course {
-  background: #fff;
-  padding: 1rem;
+.course-card {
+  background: rgb(140, 93, 93);
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin: 1rem;
+  width: 250px;
+  transition: transform 0.3s ease;
 }
 
-.course img {
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-card img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 0.5rem;
 }
 
+.courses {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 footer {
-  background: #f8c8dc;
+  background: #ffb6c1;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
   color: #333;
+  margin-top: 2rem;
 }
