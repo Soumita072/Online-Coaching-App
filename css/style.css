@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #fff0f5; /* Baby pink background */
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #ffe6ea; /* Light pink banner area */
+}
+
+.banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin-top: 1rem;
+  color: #d63384; /* Bright pink title */
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #ff69b4; /* Pink button */
+  color: rgb(193, 111, 111);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.courses, .about, .contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+.course-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.course {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.course img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: #f8c8dc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #333;
+}
